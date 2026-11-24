@@ -1,0 +1,20 @@
+// Write a C program to check given number is an Armstrong or not.
+#include <stdio.h>
+
+int main() {
+    int num, original, remainder, result = 0;
+    printf("Enter a three-digit integer: ");
+    scanf("%d", &num);
+    original = num;
+    while (original != 0) {
+        remainder = original % 10;
+        result = result + (remainder * remainder * remainder);
+        original = original / 10;
+    }
+    if (result == num) {
+        printf("Armstrong number\n");
+    } else {
+        printf("Not an Armstrong number\n");
+    }
+    return 0;
+}
