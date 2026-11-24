@@ -1,0 +1,14 @@
+// Write a C program to print numbers from 1 to 100 and stop the loop when the number reaches 50 using the break statement.
+#include <stdio.h>
+
+int main() {
+    int i;
+    for (i = 1; i <= 100; i++) {
+        if (i == 50) {
+            break;
+        }
+        printf("%d ", i);
+    }
+    printf("\n");
+    return 0;
+}
