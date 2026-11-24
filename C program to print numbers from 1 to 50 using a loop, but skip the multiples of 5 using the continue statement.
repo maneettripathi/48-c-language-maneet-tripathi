@@ -1,0 +1,14 @@
+// Write a C program to print numbers from 1 to 50 using a loop, but skip the multiples of 5 using the continue statement.
+#include <stdio.h>
+
+int main() {
+    int i;
+    for (i = 1; i <= 50; i++) {
+        if (i % 5 == 0) {
+            continue;
+        }
+        printf("%d ", i);
+    }
+    printf("\n");
+    return 0;
+}
