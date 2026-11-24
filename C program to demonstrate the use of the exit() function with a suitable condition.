@@ -1,0 +1,15 @@
+// Write a
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    if (age < 0) {
+        printf("Invalid age! Exiting program.\n");
+        exit(0);
+    }
+    printf("Your age is %d\n", age);
+    return 0;
+}
