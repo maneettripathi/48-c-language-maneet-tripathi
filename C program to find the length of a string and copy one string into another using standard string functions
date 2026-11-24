@@ -1,0 +1,15 @@
+// Write a C program to find the length of a string and copy one string into another using standard string functions.
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[100], str2[100];
+    int length;
+    printf("Enter a string: ");
+    scanf("%s", str1);
+    length = strlen(str1);
+    strcpy(str2, str1);
+    printf("Length of string = %d\n", length);
+    printf("Copied string = %s\n", str2);
+    return 0;
+}
